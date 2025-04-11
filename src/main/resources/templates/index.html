@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhopal 1Click</title>
+    
+          <!--=============== CSS ===============-->
+    <link rel="stylesheet" th:href="@{/css/topnavbar.css}">
+  
+    <link rel="stylesheet" th:href="@{/css/navbar.css}"> 
+    
+    <link rel="stylesheet" th:href="@{/css/footer.css}">   
+    
+     <link rel="stylesheet" th:href="@{/css/homepage.css}">  
+  
+  
+  <link rel="stylesheet" th:href="@{/css/contact.css}">   
+    
+	<!-- *******  Font Awesome Icons Link  ******* -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+
+	<!-- *******  Link To Goggle Fonts  *******  -->
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,800;1,900&display=swap" rel="stylesheet">
+  
+    <!--=============== JS ===============-->
+    
+    <script th:src="@{/js/script.js}" defer></script>
+    
+    <script th:src="@{/js/homepage.js}" defer></script>    
+    
+    <script th:src="@{/js/search.js}" defer></script>    
+    
+    
+    <!--=============== JS for footer page ===============--> 
+   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+          <!--=============== REMIXICONS ===============-->
+          
+ <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+</head>
+<body>
+    <!-- Include top navbar -->
+    <div th:replace="~{fragments/topnavbar :: topnavbar}"></div>
+   
+    <!-- Include Navbar Fragment -->
+   <div th:replace="~{fragments/navbar :: navbar}"></div>  
+
+   <!-- Include homepage Fragment -->
+   <div th:replace="~{fragments/homepage :: homepage}"></div>   
+   
+    <!-- Include homepage Fragment -->
+   <div th:replace="~{fragments/homecontact :: homecontact}"></div>   
+   
+   
+   <!-- Include footer Fragment -->
+  <div th:replace="~{fragments/footer :: footer}"></div>  
+   
+   
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<!-- *******  Link To CSS Style Sheet  ******* -->
+	
+     <link rel="stylesheet" th:href="@{/css/topnavbar.css}">
+  
+    <link rel="stylesheet" th:href="@{/css/navbar.css}"> 
+    
+    <link rel="stylesheet" th:href="@{/css/footer.css}"> 
+    
+     <link rel="stylesheet" th:href="@{/css/fileupload.css}"> 
+    
+    <link rel="stylesheet" th:href="@{/css/bottomnavbar.css}"> 
+    
+   
+	<!-- *******  Font Awesome Icons Link  ******* -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+
+	<!-- *******  Link To Goggle Fonts  *******  -->
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,800;1,900&display=swap" rel="stylesheet">
+
+
+    <script th:src="@{/js/script.js}" defer></script>
+    
+    <!--=============== JS for footer page ===============--> 
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+          
+          <!--=============== REMIXICONS ===============-->
+          
+ <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>Guidelines</title>
+  
+    
+    </head>
+<body>
+
+
+
+<!-- Include top navbar -->
+    <div th:replace="~{fragments/topnavbar :: topnavbar}"></div>
+   
+    <!-- Include Navbar Fragment -->
+   <div th:replace="~{fragments/navbar :: navbar}"></div>
+   
+   <div class="breadcrumb-container">
+        <h1> <span> | </span> Bhopal Guidelines </h1>
+        <p><a href="/">Home</a> / <a href="#">Bhopal</a> / <span> Bhopal Guidelines</span></p>
+    </div>
+   
+   <div class="container8">
+   <!-- 
+    <h2>Download PDFs</h2>
+     -->
+     
+    <!-- Upload Form 
+    <form method="post" action="/guideline/guidelineupload" enctype="multipart/form-data">
+        <input type="file" name="file" accept="application/pdf" required>
+        <button type="submit" class="upload-btn8">Upload PDF</button>
+    </form>
+
+    
+    <p class="success-message8" th:if="${message}" th:text="${message}"></p>
+    <p class="error-message8" th:if="${error}" th:text="${error}"></p>
+-->
+    <hr>
+
+    <!-- Available PDFs -->
+    <h3>Available PDFs</h3>
+    <div class="file-container8">
+        <div th:each="file : ${files}" class="file-item8">
+            <span th:text="${file}"></span>
+
+            <div class="buttons8">
+                <!-- Download Button -->
+                <a th:href="@{/guideline/download/{fileName}(fileName=${file})}" class="download-btn8">Download</a>
+
+                <!-- Delete Button 
+                <form method="post" th:action="@{/guideline/delete/{fileName}(fileName=${file})}">
+                    <button type="submit" class="delete-btn8">Delete</button>
+                </form>
+                -->
+            </div>
+        </div>
+    </div>
+</div>
+
+
+ <!-- Include footer Fragment -->
+  <div th:replace="~{fragments/footer :: footer}"></div>  
+   
+</body>
+</html>

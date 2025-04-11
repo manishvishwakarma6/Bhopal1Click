@@ -1,0 +1,257 @@
+
+
+/* Form Container */
+.container4 {
+	margin:auto;
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    border: 2px solid dodgerblue; /* Border color added */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    margin-top: 3%;  /* Set top margin */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    position:relative;
+}
+
+
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+label {
+    font-weight: 500;
+    font-size:16px;
+    margin-bottom: 5px;
+}
+
+
+ 
+input {
+	 width: 100%;
+	 padding: 10px;
+}
+
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+
+textarea {
+    resize: none;
+    z-index: 10;
+}
+
+
+
+#btn {
+    padding: 8px 16px;
+	font-size: 18px;
+	background-color: dodgerblue;
+	color: #ddd;
+	border: 1px solid transparent;
+	border-radius: 25px;
+	outline: none;
+	cursor: pointer;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+	transition: 0.4s;
+	margin-top:10px;
+}
+
+#btn:hover {
+    background-color: #2e2e2e;
+    color: dodgerblue;
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+	border: 1px solid dodgerblue;
+}
+
+
+@media (min-width: 1025px) {
+    .container4 {
+        max-width: 600px;
+        padding: 30px;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .container4 {
+        max-width: 80%;
+        padding: 25px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    input, textarea {
+        font-size: 15px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .container4 {
+        max-width: 90%;
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    input, textarea {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    #btn {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .container4 {
+        max-width: 85%;
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    input, textarea {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+   #btn {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+
+
+/* captcha code */
+
+
+/* CAPTCHA Container */
+.captcha-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Label Styling */
+.captcha-container label {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Input Field Styling */
+.captcha-container input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* CAPTCHA Text Display */
+#captcha-text {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    background: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    width: 100%;
+}
+
+/* Buttons */
+.captcha-container button {
+    width: 45%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Refresh CAPTCHA Button */
+button[type="button"] {
+    background-color:dodgerblue;
+    color: white;
+}
+
+button[type="button"]:hover {
+    background-color: #2e2e2e;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .captcha-container {
+        width: 90%;
+    }
+
+    .captcha-container input,
+    .captcha-container button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    #captcha-text {
+        font-size: 16px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .captcha-container label {
+        font-size: 14px;
+    }
+
+    .captcha-container input,
+    .captcha-container button {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    #captcha-text {
+        font-size: 14px;
+        padding: 6px;
+    }
+}

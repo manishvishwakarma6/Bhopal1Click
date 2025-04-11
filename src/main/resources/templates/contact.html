@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<!-- *******  Link To CSS Style Sheet  ******* -->
+	
+     <link rel="stylesheet" th:href="@{/css/topnavbar.css}">
+  
+    <link rel="stylesheet" th:href="@{/css/navbar.css}"> 
+    
+    <link rel="stylesheet" th:href="@{/css/footer.css}"> 
+    
+	<link rel="stylesheet" th:href="@{/css/contact.css}">   
+    
+    <link rel="stylesheet" th:href="@{/css/bottomnavbar.css}">  
+  
+	<!-- *******  Font Awesome Icons Link  ******* -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+
+	<!-- *******  Link To Goggle Fonts  *******  -->
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,800;1,900&display=swap" rel="stylesheet">
+
+
+    <script th:src="@{/js/script.js}" defer></script>
+    
+    <!--=============== JS for footer page ===============--> 
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+          
+          <!--=============== REMIXICONS ===============-->
+          
+ <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Contact Section</title>
+</head>
+<body>
+
+
+
+<!-- Include top navbar -->
+    <div th:replace="~{fragments/topnavbar :: topnavbar}"></div>
+   
+    <!-- Include Navbar Fragment -->
+   <div th:replace="~{fragments/navbar :: navbar}"></div>
+
+<div class="breadcrumb-container">
+        <h1> <span> | </span> Contact </h1>
+        <p><a href="/">Home</a> / <a href="#">Contact Us</a>
+         / <span> Contact </span></p>
+    </div>
+   
+
+	<div class="container5">
+		<main class="row5">
+			
+			<!--  *******   Left Section (Column) Starts   *******  -->
+
+			<section class="col left">
+				
+				<!--  *******   Title Starts   *******  -->
+
+				<div class="contactTitle">
+					<h2>Get In Touch</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+				</div>
+
+				<!--  *******   Title Ends   *******  -->
+
+				<!--  *******   Contact Info Starts   *******  -->
+
+				<div class="contactInfo">
+					
+					<div class="iconGroup">
+						<div class="icon">
+							<i class="fa-solid fa-phone"></i>
+						</div>
+						<div class="details">
+							<span>Phone</span>
+							<span>+91 8770 774 911</span>
+						</div>
+					</div>
+
+					<div class="iconGroup">
+						<div class="icon">
+							<i class="fa-solid fa-envelope"></i>
+						</div>
+						<div class="details">
+							<span>Email</span>
+							<span>manish@gmail.com</span>
+						</div>
+					</div>
+
+					<div class="iconGroup">
+						<div class="icon">
+							<i class="fa-solid fa-location-dot"></i>
+						</div>
+						<div class="details">
+							<span>Location</span>
+							<span>Bhopal, M.P., India</span>
+						</div>
+					</div>
+
+				</div>
+
+				<!--  *******   Contact Info Ends   *******  -->
+
+				<!--  *******   Social Media Starts   *******  -->
+
+				<div class="socialMedia">
+					<a href="https://www.facebook.com/ITWallah6/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+					<a href="https://twitter.com/ITWallah6" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+					<a href="https://www.instagram.com/it_wallah6/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+					<a href="https://youtube.com/@it_wallah?si=5gyImn6xkppkE7cd" target="_blank"><i class="fab fa-youtube"></i></a>
+					<a href="https://www.linkedin.com/in/er-manish-kumar695179" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+				</div>
+
+				<!--  *******   Social Media Ends   *******  -->
+
+			</section>
+
+			<!--  *******   Left Section (Column) Ends   *******  -->
+
+			<!--  *******   Right Section (Column) Starts   *******  -->
+
+			<section class="col right">
+				
+				<!--  *******   Form Starts   *******  -->
+
+				<form  th:action="@{/contact-form}" th:object="${user1}"  method="POST" class="messageForm">
+					
+					<div class="inputGroup fullWidth">
+						<input type="text" name="name" required="required">
+						<label>Your Name</label>
+					</div>
+
+					<div class="inputGroup fullWidth">
+						<input type="email" name="email" required="required">
+						<label>Email</label>
+					</div>
+
+					<div class="inputGroup fullWidth">
+						<input type="text" name="subject" required="required">
+						<label>Subject</label>
+					</div>
+
+					<div class="inputGroup fullWidth">
+						<textarea name="message"  required="required"></textarea>
+						<label>Say Something</label>
+					</div>
+
+					<div class="inputGroup fullWidth">
+						<button>Send Message</button>
+					</div>
+
+				</form>
+
+				<!--  *******   Form Ends   *******  -->
+			</section>
+
+			<!--  *******   Right Section (Column) Ends   *******  -->
+
+		</main>
+	</div>
+	
+	 
+   <!-- Include footer Fragment -->
+  <div th:replace="~{fragments/footer :: footer}"></div>  
+   
+</body>
+</html>

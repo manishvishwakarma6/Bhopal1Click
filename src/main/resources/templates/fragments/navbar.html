@@ -1,0 +1,738 @@
+<div th:fragment="navbar">
+
+    <header>
+        <div class="container">
+            <nav>
+                <div class="menu-icons">
+                   <i class="fas fa-bars"></i>
+                   <i class="fas fa-times"></i>
+                </div>
+                <ul class="nav-list">
+                    <li>
+                        <a th:href="@{/}">Home</a>
+                    </li>
+                    
+                     <!--=============== DROPDOWN 1 ===============-->
+                    <li>
+                        <a href="#">Bhopal <i class="fas fa-caret-down"></i></a>
+                        <ul class="sub-menu">
+                             <li>
+                           <a th:href="@{/history}" class="dropdown__link">
+                          History
+                           </a>                          
+                        </li>
+
+                        <li>
+                           <a th:href="@{/about}" class="dropdown__link">
+                          About Bhopal
+                           </a>
+                        </li>
+                        
+                        <li>
+                           <a th:href="@{/directors}" class="dropdown__link">
+                        Board Of Directors
+                           </a>
+                        </li>
+
+                        <li>
+           <a href="https://www.bmconline.gov.in/sap/bc/ui5_ui5/sap/zbmcprdhome/index.html"
+            target="_blank" class="dropdown__link">
+                               Muncipal Corp.
+                           </a>
+                        </li>
+                        
+                        <li>
+                           <a href="/guideline"  class="dropdown__link">
+                             Guidelines 
+                           </a>
+                        </li>
+                        </ul>
+                    </li>
+                    
+                    
+                    
+                    
+                
+                       <!--=============== DROPDOWN 2 ===============-->
+                    <li>
+                        <a href="#">Media <i class="fas fa-caret-down"></i></a>
+                        <ul class="sub-menu">
+                             <li>
+                           <a th:href="@{/videos}" class="dropdown__link">
+                                Videos Gallery
+                           </a>                          
+                        </li>
+
+                        <li>
+                           <a th:href="@{/galleryimg}" class="dropdown__link">
+                               Image Gallery
+                           </a>
+                        </li>
+
+                        <li>
+                           <a th:href="@{/press}" class="dropdown__link">
+                               Press Coverage
+                           </a>
+                        </li>
+                        </ul>
+                    </li>
+                    
+                    
+                       <!--=============== DROPDOWN 3 ===============-->
+                    <li>
+                        <a href="#">Websites <i class="fas fa-caret-down"></i></a>
+                        <ul class="sub-menu">
+                             <li>
+                           <a href="https://bhopal.nic.in/"  target="_blank" class="dropdown__link">
+                              District Bhopal
+                           </a>                          
+                        </li>
+                        
+                        <li>
+                           <a href="https://cmhelpline.mp.gov.in/"  target="_blank" class="dropdown__link">
+                                CM Helpline
+                           </a>                          
+                        </li>
+                        
+                        <li>
+                           <a href="https://www.mponline.gov.in/portal/"  target="_blank" class="dropdown__link">
+                              MP Online
+                           </a>                          
+                        </li>
+                        
+                        <li>
+                           <a href="https://cmdashboard.mp.gov.in/index.aspx"  target="_blank" class="dropdown__link">
+                                CM
+                           </a>                          
+                        </li>
+                        
+                        <li>
+                           <a href="https://uidai.gov.in/hi/"  target="_blank" class="dropdown__link">
+                               Adhar Service
+                           </a>                          
+                        </li>
+                        
+                        <li>
+                           <a href="https://samagra.gov.in/"  target="_blank" class="dropdown__link">
+                               Samagra ID 
+                           </a>                          
+                        </li>
+                        
+                        <li>
+                           <a href="https://educationportal.mp.gov.in/"  target="_blank" class="dropdown__link">
+                               Education 
+                           </a>                          
+                        </li>
+                        
+                        <li>
+                           <a href="https://gfms.mp.gov.in/"  target="_blank" class="dropdown__link">
+                              MP Education
+                           </a>                          
+                        </li>
+                        
+                        
+                        </ul>
+                    </li>
+                    
+                    
+                    
+                    
+                     <!--=============== DROPDOWN 4 ===============-->
+                       
+                    <li>
+                        <a href="#">Education 
+                            <i class="fas fa-caret-down"></i>
+                        </a>
+                        <ul class="sub-menu">
+                            
+                            <li>
+                                <a href="#">Governments 
+                                    <i class="fas fa-caret-down"></i> </a>
+                                <ul class="sub-menu">
+                                    <li>
+                                <a  th:href="@{/govtdepartments}" class="dropdown__sublink">
+                                   Departments
+                                 </a>
+                              </li>
+      
+                             <li>
+                                 <a  th:href="@{/govtprojects}" class="dropdown__sublink">
+                                  Projects
+                                 </a>
+                              </li>
+      
+                              <li>
+                               <a  th:href="@{/govtpolicies}" class="dropdown__sublink">
+                                  Policies
+                                 </a>
+                              </li>
+                              
+                              <li>
+                             <a th:href="@{/govtbudgets}" class="dropdown__sublink">
+                                   Budget
+                                 </a>
+                              </li>
+                                 </ul>
+                            </li>
+                            
+                            
+                            
+                             <li>
+                                <a href="#">Education  
+                                    <i class="fas fa-caret-down"></i></a>
+                                <ul class="sub-menu">
+                                     <li>
+                                <a  th:href="@{/educationdepartments}" class="dropdown__sublink">
+                                    Department
+                                 </a>
+                              </li>
+      
+                             <li>
+                                 <a  th:href="@{/educationofficers}" class="dropdown__sublink">
+                                    Officers
+                                 </a>
+                              </li>
+      
+                              <li>
+                               <a  th:href="@{/educationcourses}" class="dropdown__sublink">
+                                    Courses
+                                 </a>
+                              </li>
+                              
+                              <li>
+                             <a th:href="@{/educationuniversities}" class="dropdown__sublink">
+                                  Universities
+                                 </a>
+                              </li> 
+                              
+                              <li>
+                             <a th:href="@{/educationcolleges}" class="dropdown__sublink">
+                                     Colleges
+                                 </a>
+                              </li> 
+                              
+                              <li>
+                             <a th:href="@{/educationschools}" class="dropdown__sublink">
+                                    Schools
+                                 </a>
+                              </li> 
+                              
+                              <li>
+                             <a th:href="@{/educationlibraries}" class="dropdown__sublink">
+                                    Libraries
+                                 </a>
+                              </li> 
+                                 </ul>
+                            </li>
+      
+      
+      
+      
+                             <li>
+                                <a href="#">Games 
+                                    <i class="fas fa-caret-down"></i></a>
+                                <ul class="sub-menu">
+                                   <li>
+                                <a  th:href="@{/gameplayers}" class="dropdown__sublink">
+                                    Players
+                                 </a>
+                              </li>
+                             </ul>
+                            </li>
+      
+      
+      
+      							<li>
+                                <a href="#">Tourism <i class="fas fa-caret-down"></i></a>
+                                <ul class="sub-menu">
+                                   <li>
+                                <a  th:href="@{/touristplaces}" class="dropdown__sublink">
+                                    Tourist Place
+                                 </a>
+                              </li>
+                             </ul>
+                            </li>
+     
+                        </ul>
+                    </li>
+                    
+                    
+                     <!--=============== DROPDOWN 5 ===============-->
+                       
+                    <li>
+                        <a href="#"> Citizen Services 
+                            <i class="fas fa-caret-down"></i>
+                        </a>
+                        <ul class="sub-menu">
+                            
+                            <li>
+                                <a href="#">Infrastructure 
+                                    <i class="fas fa-caret-down"></i></a>
+                                <ul class="sub-menu">
+                                   <li>
+                                <a  th:href="@{/infrastructurecity}" class="dropdown__sublink">
+                                     Infrastructure City
+                                 </a>
+                              </li>
+      
+                             <li>
+                                 <a  th:href="@{/infrastructureparks}" class="dropdown__sublink">
+                                    Parks
+                                 </a>
+                              </li>
+      
+                              <li>
+                               <a  th:href="@{/infrastructureroads}" class="dropdown__sublink">
+                                     Roads
+                                 </a>
+                              </li>
+                              
+                              <li>
+                             <a th:href="@{/infrastructurebridges}" class="dropdown__sublink">
+                                     Bridges
+                                 </a>
+                              </li> 
+                              
+                              <li>
+                             <a th:href="@{/infrastructurepublicbuildings}" class="dropdown__sublink">
+                                     Public Building
+                                 </a>
+                              </li> 
+                              
+                               <li>
+                             <a th:href="@{/infrastructuremuseums}" class="dropdown__sublink">
+                                     Museums
+                                 </a>
+                              </li> 
+                              
+                               <li>
+                             <a th:href="@{/infrastructuredrainagesystems}" class="dropdown__sublink">
+                                     Drainage Systems
+                                 </a>
+                              </li> 
+                              
+                               <li>
+                             <a th:href="@{/infrastructureparkinglots}" class="dropdown__sublink">
+                                     Parking
+                                 </a>
+                              </li> 
+                               <li>
+                             <a th:href="@{/infrastructurestadiums}" class="dropdown__sublink">
+                                     Stadiums
+                                 </a>
+                              </li> 
+                              
+                               <li>
+                             <a th:href="@{/infrastructureauditoriums}" class="dropdown__sublink">
+                                     Auditoriums
+                                 </a>
+                              </li> 
+                           </ul>
+                            </li>
+                            
+                            
+                            
+                             <li>
+                                <a href="#">Environments 
+                                    <i class="fas fa-caret-down"></i></a>
+                                <ul class="sub-menu">
+                                     <li>
+                                <a  th:href="@{/environmentmonitoring}" class="dropdown__sublink">
+                                     Env. Monitoring
+                                 </a>
+                              </li>
+      
+                             <li>
+                                 <a  th:href="@{/environmentairqualitystations}" class="dropdown__sublink">
+                                     Air Quality Stations
+                                 </a>
+                              </li>
+      
+                              <li>
+                               <a  th:href="@{/environmentweatherstations}" class="dropdown__sublink">
+                                    Weather Stations
+                                 </a>
+                              </li>
+                              
+                              <li>
+                             <a th:href="@{/environmenttreeplantationdrives}" class="dropdown__sublink">
+                                   Tree Plant. Drives 
+                                 </a>
+                              </li> 
+                              
+                              <li>
+                             <a th:href="@{/environmentnoisemonitoringstations}" class="dropdown__sublink">
+                                     Noise Monitoring 
+                                 </a>
+                              </li> 
+                              
+                              <li>
+                             <a th:href="@{/environmentwaterqualitystations}" class="dropdown__sublink">
+                                     Water Quality St.
+                                 </a>
+                              </li> 
+                          
+                           </ul>
+                            </li>
+      
+      
+      
+      
+                             <li>
+                                <a href="#">Utility Services 
+                                    <i class="fas fa-caret-down"></i></a>
+                                <ul class="sub-menu">
+                                    <li>
+                                <a  th:href="@{/utilityservicerestaurants}" class="dropdown__sublink">
+                                     Restaurants
+                                 </a>
+                                 
+                              </li>
+                              
+                              <li>
+                                <a  th:href="@{/utilityservicemalls}" class="dropdown__sublink">
+                                   Mall
+                                 </a>
+                              </li>
+                              
+                              <li>
+                                <a  th:href="@{/utilityserviceelectronics}" class="dropdown__sublink">
+                                     Electronics
+                                 </a>
+                              </li>
+                             </ul>
+                            </li>
+      
+      
+      
+      							<li>
+                                <a href="#"> Urban Developments <i class="fas fa-caret-down"></i></a>
+                                <ul class="sub-menu">
+                                   <li>
+                                <a  th:href="@{/urbandevelopmenthousingprojects}" class="dropdown__sublink">
+                                     Housing Projects
+                                 </a>
+                              </li>
+                              
+                               <li>
+                                <a  th:href="@{/urbandevelopmentlandrecords}" class="dropdown__sublink">
+                                    Land Records
+                                 </a>
+                              </li>
+       
+      						  <li>
+                                <a  th:href="@{/urbandevelopmenthousingstatistics}" class="dropdown__sublink">
+                                     Housing Statistics 
+                                 </a>
+                              </li>
+                              
+                               <li>
+                                <a  th:href="@{/urbandevelopmentcompanies}" class="dropdown__sublink">
+                                     Companies
+                                 </a>
+                              </li>
+                             </ul>
+                            </li>
+      </ul>
+      </li>
+      
+      
+                     
+                     <!--=============== DROPDOWN 6 ===============-->
+                       
+                    <li>
+                        <a href="#">Public Safety 
+                            <i class="fas fa-caret-down"></i>
+                        </a>
+                        <ul class="sub-menu">
+                            
+                            <li>
+                                <a href="#">Contact Directory 
+                                    <i class="fas fa-caret-down"></i></a>
+                                <ul class="sub-menu">
+                                  <li>
+                                <a  th:href="@{/emergencycontacts}" class="dropdown__sublink">
+                                     Emer. Contacts
+                                 </a>
+                              </li>
+      
+                             <li>
+                                 <a  th:href="@{/governmentoffices}" class="dropdown__sublink">
+                                     Government Office
+                                 </a>
+                              </li>
+      
+                              <li>
+                               <a  th:href="@{/publicutilities}" class="dropdown__sublink">
+                                     Public Utility
+                                 </a>
+                              </li>
+                             
+                           </ul>
+                            </li>
+                            
+                            
+                            
+                             <li>
+                                <a href="#">Public Safety  
+                                    <i class="fas fa-caret-down"></i></a>
+                                <ul class="sub-menu">
+                                      <li>
+                                <a  th:href="@{/policestations}" class="dropdown__sublink">
+                                    Police Stations 
+                                 </a>
+                              </li>
+      
+                             <li>
+                                 <a  th:href="@{/firestations}" class="dropdown__sublink">
+                                     Fire Stations
+                                 </a>
+                              </li>
+      
+                              <li>
+                               <a  th:href="@{/securitycameras}" class="dropdown__sublink">
+                                     Security Camera
+                                    
+                                 </a>
+                              </li>
+                              
+                              <li>
+                             <a th:href="@{/ambulancefacilities}" class="dropdown__sublink">
+                                    Ambulance Facility
+                                 </a>
+                              </li> 
+                              
+                              <li>
+                             <a th:href="@{/emergencycalllogs}" class="dropdown__sublink">
+                                    Emer. Call Logs
+                                 </a>
+                              </li> 
+                              
+                              <li>
+                             <a th:href="@{/crimecases}" class="dropdown__sublink">
+                                     Crime Cases
+                                 </a>
+                              </li> 
+                          
+
+                                 </ul>
+                            </li>
+      
+      
+      
+      
+                             <li>
+                                <a href="#">Healthcare 
+                                    <i class="fas fa-caret-down"></i></a>
+                                <ul class="sub-menu">
+                                  <li>
+                                <a  th:href="@{/hospitals}" class="dropdown__sublink">
+                                     Hospitals
+                                 </a>
+                              </li>
+                              
+                              <li>
+                                <a  th:href="@{/healthcareambulances}" class="dropdown__sublink">
+                                     Ambulance
+                                 </a>
+                              </li>
+                              
+                              <li>
+                                <a  th:href="@{/healthcaredoctors}" class="dropdown__sublink">
+                                    Doctors
+                                 </a>
+                              </li>
+  
+
+                             </ul>
+                            </li>
+     
+     
+                        </ul>
+                    </li>
+                    
+                    
+                    
+                                   
+                     <!--=============== DROPDOWN 7 ===============-->
+                       
+                    <li>
+                        <a href="#">Managements   
+                            <i class="fas fa-caret-down"></i>
+                        </a>
+                        <ul class="sub-menu">
+                            
+                            <li>
+                                <a href="#">Waste Mgmt 
+                                    <i class="fas fa-caret-down"></i></a>
+                                <ul class="sub-menu">
+                                     <li>
+                                <a  th:href="@{/wastageservice}" class="dropdown__sublink">
+                                     Wastage Services
+                                 </a>
+                              </li>                           </ul>
+                            </li>
+                            
+                            
+                            
+                             <li>
+                                <a href="#">Transport Mgmt 
+                                    <i class="fas fa-caret-down"></i></a>
+                                <ul class="sub-menu">
+                                     <li>
+                                <a  th:href="@{/busstations}" class="dropdown__sublink">
+                                     Bus Stations 
+                                 </a>
+                              </li>
+      
+                             <li>
+                                 <a  th:href="@{/railwaystations}" class="dropdown__sublink">
+                                     Railway Stations
+                                 </a>
+                              </li>
+      
+                              <li>
+                               <a  th:href="@{/metrostations}" class="dropdown__sublink">
+                                     Metro Stations
+                                    
+                                 </a>
+                              </li>
+                              
+                              <li>
+                             <a th:href="@{/airports}" class="dropdown__sublink">
+                                      Airports
+                                 </a>
+                              </li> 
+                              
+                              <li>
+                             <a th:href="@{/vehicleservices}" class="dropdown__sublink">
+                                    Vehicle Services
+                                 </a>
+                              </li> 
+                              
+                              <li>
+                             <a th:href="@{/parkinglots}" class="dropdown__sublink">
+                                     Parking Lots 
+                                 </a>
+                              </li> 
+                          
+                           </ul>
+                            </li>
+      
+      
+      
+      
+                             <li>
+                                <a href="#">Energy Mgmt 
+                                    <i class="fas fa-caret-down"></i></a>
+                                <ul class="sub-menu">
+                                  <li>
+                                <a  th:href="@{/electricitysupply}" class="dropdown__sublink">
+                                    Electricity Supply
+                                 </a>
+                              </li>
+                              
+                              </li>
+                                <a  th:href="@{/gassupply}" class="dropdown__sublink">
+                                   Gas Supply
+                                 </a>
+                              </li>
+                              
+                              <li>
+                                <a  th:href="@{/fuelsupply}" class="dropdown__sublink">
+                                     Fuel Supply
+                                 </a>
+                              </li>
+                              
+                               <li>
+                                <a  th:href="@{/watersupply}" class="dropdown__sublink">
+                                     Water Supply 
+                                 </a>
+                              </li>
+    						
+    						 <li>
+                                <a  th:href="@{/energysolarplants}" class="dropdown__sublink">
+                                     Solar 
+                                 </a>
+                              </li>
+                            </ul>
+                            </li>
+      
+      
+      
+      							<li>
+                                <a href="#">Resident Mgmt <i class="fas fa-caret-down"></i></a>
+                                <ul class="sub-menu">
+                                   <li>
+                                <a  th:href="@{/populationstatistics}" class="dropdown__sublink">
+                                    Population Stat.
+                                 </a>
+                               </li>
+                               
+                                <li>
+                                <a  th:href="@{/deathrecords}" class="dropdown__sublink">
+                                     Death Records 
+                                 </a>
+                               </li>
+                               
+                                <li>
+                                <a  th:href="@{/birthrecords}" class="dropdown__sublink">
+                                   Birth Records 
+                                 </a>
+                               </li>
+                               
+                                <li>
+                                <a  th:href="@{/crimereports}" class="dropdown__sublink">
+                                   Crime Reports 
+                                 </a>
+                               </li>
+                             </ul>
+                            </li>
+                            
+                            
+                            
+                             <li>
+                                <a href="#">Traffic Mgmt 
+                                    <i class="fas fa-caret-down"></i></a>
+                                <ul class="sub-menu">
+                                 <li>
+                                <a  th:href="@{/trafficsignal}" class="dropdown__sublink">
+                                     signals
+                                 </a>
+                               </li>                  
+                                    </ul>
+                            </li>
+      
+     
+                        </ul>
+                    </li>
+                    
+                    
+                                   
+                     <!--=============== DROPDOWN 8 ===============-->
+                       
+                    <li>
+                        <a href="#">Download  
+                             <i class="fas fa-caret-down"></i>
+                        </a>
+                        <ul class="sub-menu"> 
+                            <li>
+                                <a href="/pdf"> PDFs 
+                                    </a>
+                            </li>
+     
+                        </ul>
+                    </li>
+                    
+                    
+                                   
+                    
+                  <li><a th:href="@{/feedback}" class="nav__link">Feedback</a></li> 
+                  
+                  <li><a th:href="@{/contact}"  class="nav__link"></i>Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+</div>

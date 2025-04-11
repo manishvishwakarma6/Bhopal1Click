@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+.grid-container1 {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    border:3px solid dodgerblue;
+}
+
+.grid-box1 {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 1200px;
+    margin: 0 20px; /* Left and right margin */
+}
+
+
+.grid-box1 p{
+	font-size:16px;
+}
+    @media (max-width: 600px) {
+        .grid-box1 {
+        margin: 0 10px;
+        padding: 15px;
+    }
+}

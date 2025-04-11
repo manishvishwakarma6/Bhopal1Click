@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+/* Breadcrumb Container */
+.breadcrumb-container {
+    background-color: #2F4F2F;
+    background-size: cover;
+    padding: 20px;
+    text-align: left;
+    color: white;
+    position: relative;
+    height:20vh;
+    margin-bottom:3%;
+}
+
+/* Breadcrumb Heading */
+.breadcrumb-container h1 {
+	margin-top:2.5%;
+	margin-left:10%;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+/* Breadcrumb Links */
+.breadcrumb-container p {
+    font-size: 16px;
+	margin-left:10%;
+}
+
+.breadcrumb-container a {
+    text-decoration: none;
+    color: yellow;
+    font-weight: bold;
+}
+
+
+.breadcrumb-container span {
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .breadcrumb-container {
+        padding: 15px;
+    }
+
+    .breadcrumb-container h1 {
+        font-size: 24px;
+    }
+
+    .breadcrumb-container p {
+        font-size: 16px;
+    }
+}

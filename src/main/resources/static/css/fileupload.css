@@ -1,0 +1,144 @@
+/* General Styles */
+.container8 {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    z-index:10;
+    position:relative;
+}
+
+
+h2, h3 {
+    color: #333;
+    font-size:25px;
+    font-weight:600;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+input[type="file"] {
+    padding: 10px;
+    border: 2px solid dodgerblue;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
+    font-size:16px;
+}
+
+button{
+    border: none;
+    cursor: pointer;
+    color: black;
+}
+
+
+.upload-btn8 {
+    background-color: dodgerblue;
+   padding: 5px 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    font-size:16px;
+}
+
+.upload-btn8:hover {
+    background-color: #007bff ;
+}
+
+.download-btn8 {
+    background-color: dodgerblue;
+    padding: 5px 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    font-size:16px;
+}
+
+.download-btn8:hover {
+    background-color: #007bff;
+}
+
+.delete-btn8 {
+    background-color: #dc3545;
+    padding: 5px 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    font-size:16px;
+}
+
+.delete-btn8:hover {
+    background-color: #c82333;
+}
+
+
+.success-message8 {
+    color: dodgerblue;
+}
+
+.error-message8 {
+    color: #dc3545;
+}
+
+hr {
+    margin: 20px 0;
+    border: 0;
+    height: 1px;
+    background:dodgerblue;
+    
+}
+
+
+
+.file-container8 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.file-item8 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    font-size:16px;
+}
+
+.buttons8 {
+    display: flex;
+    gap: 5px;
+}
+
+
+@media (max-width: 600px) {
+    .file-item8 {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .buttons8 {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+

@@ -1,0 +1,198 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta charset="UTF-8">
+
+<!-- *******  Link To CSS Style Sheet  ******* -->
+	
+     <link rel="stylesheet" th:href="@{/css/topnavbar.css}">
+  
+    <link rel="stylesheet" th:href="@{/css/navbar.css}"> 
+    
+    <link rel="stylesheet" th:href="@{/css/footer.css}"> 
+    
+     <link rel="stylesheet" th:href="@{/css/bottomnavbar.css}"> 
+    
+	
+<link rel="stylesheet" th:href="@{/css/galleryimg.css}">
+
+<!-- *******  Font Awesome Icons Link  ******* -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+
+	<!-- *******  Link To Goggle Fonts  *******  -->
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,800;1,900&display=swap" rel="stylesheet">
+
+
+    <script th:src="@{/js/script.js}" defer></script>
+    
+    <!--=============== JS for footer page ===============--> 
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+          
+          <!--=============== REMIXICONS ===============-->
+          
+ <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<title>Images Gallery</title>
+</head>
+<body>
+
+
+<!-- Include top navbar -->
+    <div th:replace="~{fragments/topnavbar :: topnavbar}"></div>
+   
+    <!-- Include Navbar Fragment -->
+   <div th:replace="~{fragments/navbar :: navbar}"></div>
+
+<div class="breadcrumb-container">
+        <h1> <span> | </span> Image Gallery</h1>
+        <p><a href="/">Home</a> / <a href="#">Media</a> / <span>Image Gallery</span></p>
+    </div>
+    
+<!-- Photo Grid -->
+<div class="row1">
+
+    <div class="column">
+        <div class="img-hover-zoom">
+         <img th:src="@{/images/img1.jpg}" style="width:100%" alt="">
+        </div>
+        <div class="img-hover-zoom">
+            <img th:src="@{/images/img2.png}" style="width:100%" alt="">
+        </div>
+        <div class="img-hover-zoom">
+            <img th:src="@{/images/img3.jpg}" style="width:100%" alt="">
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="img-hover-zoom">
+            <img th:src="@{/images/img4.jpg}" style="width:100%" alt="">
+        </div>
+        <div class="img-hover-zoom">
+            <img src="~/images/img5.jpg" style="width:100%" alt="">
+        </div>
+        <div class="img-hover-zoom">
+            <img th:src="@{/images/img9.jpg}" style="width:100%" alt="">
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="img-hover-zoom">
+            <img th:src="@{/images/img7.png}" style="width:100%" alt="">
+        </div>
+        <div class="img-hover-zoom">
+            <img th:src="@{/images/img8.png}" style="width:100%" alt="">
+        </div>
+        <div class="img-hover-zoom">
+            <img th:src="@{/images/img12.jpg}" style="width:100%" alt="">
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="img-hover-zoom">
+            <img th:src="@{/images/img10.jpg}" style="width:100%" alt="">
+        </div>
+       
+        <div class="img-hover-zoom">
+            <img th:src="@{/images/img19.jpg}" style="width:100%" alt="">
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="img-hover-zoom">
+            <img th:src="@{/images/img13.png}" style="width:100%" alt="">
+        </div>
+        <div class="img-hover-zoom">
+            <img th:src="@{/images/img14.jpg}" style="width:100%" alt="">
+        </div>
+        <div class="img-hover-zoom">
+            <img th:src="@{/images/img6.jpg}" style="width:100%" alt="">
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="img-hover-zoom">
+            <img th:src="@{/images/img16.jpg}" style="width:100%" alt="">
+        </div>
+        <div class="img-hover-zoom">
+            <img th:src="@{/images/img17.jpg}" style="width:100%" alt="">
+        </div>
+        <div class="img-hover-zoom">
+            <img th:src="@{/images/img20.jpg}" style="width:100%" alt="">
+        </div>
+    </div>
+
+
+    <div class="column">
+        <div class="img-hover-zoom">
+            <img th:src="@{/images/img15.jpg}" style="width:100%" alt="">
+        </div>
+        <div class="img-hover-zoom">
+            <img th:src="@{/images/img18.jpg}" style="width:100%" alt="">
+        </div>
+        <div class="img-hover-zoom">
+            <img th:src="@{/images/img21.jpg}" style="width:100%" alt="">
+        </div>
+    </div>
+
+
+    <div class="column">
+        <div class="img-hover-zoom">
+            <img th:src="@{/images/img22.jpg}" style="width:100%" alt="">
+        </div>
+        <div class="img-hover-zoom">
+            <img th:src="@{/images/img23.jpg}" style="width:100%" alt="">
+        </div>
+    </div>
+
+
+    <div class="column">
+        <div class="img-hover-zoom">
+            <img th:src="@{/images/img11.jpg}" style="width:100%" alt="">
+        </div>
+        <div class="img-hover-zoom">
+            <img th:src="@{/images/img28.jpg}" style="width:100%" alt="">
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="img-hover-zoom">
+            <img th:src="@{/images/img29.jpg}" style="width:100%" alt="">
+        </div>
+    </div>
+    <div class="column">  
+    <div class="img-hover-zoom">
+        <img th:src="@{/images/img27.jpg}" style="width:100%" alt="">
+    </div>
+        <div class="img-hover-zoom">
+            <img th:src="@{/images/img26.jpg}" style="width:100%" alt="">
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="img-hover-zoom">
+            <img th:src="@{/images/img25.png}" style="width:100%" alt="">
+        </div>
+        <div class="img-hover-zoom">
+            <img th:src="@{/images/img24.png}" style="width:100%" alt="">
+        </div>
+    </div>
+
+  
+
+</div>
+
+
+
+
+
+
+   <!-- Include footer Fragment -->
+  <div th:replace="~{fragments/footer :: footer}"></div>  
+   
+</body>
+</html>

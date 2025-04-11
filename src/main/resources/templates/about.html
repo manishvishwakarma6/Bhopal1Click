@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<!-- *******  Link To CSS Style Sheet  ******* -->
+	
+     <link rel="stylesheet" th:href="@{/css/topnavbar.css}">
+  
+    <link rel="stylesheet" th:href="@{/css/navbar.css}"> 
+    
+    <link rel="stylesheet" th:href="@{/css/footer.css}"> 
+    
+    <link rel="stylesheet" th:href="@{/css/bottomnavbar.css}">  
+  
+	
+<link rel="stylesheet" th:href="@{/css/about.css}">
+
+<!-- *******  Font Awesome Icons Link  ******* -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+
+	<!-- *******  Link To Goggle Fonts  *******  -->
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,800;1,900&display=swap" rel="stylesheet">
+
+
+    <script th:src="@{/js/script.js}" defer></script>
+    
+    <script th:src="@{/js/search.js}" defer></script>    
+    
+    <!--=============== JS for footer page ===============--> 
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+          
+          <!--=============== REMIXICONS ===============-->
+          
+ <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+<title>About Bhopal</title>
+</head>
+<body>
+
+<!-- Include top navbar -->
+    <div th:replace="~{fragments/topnavbar :: topnavbar}"></div>
+   
+    <!-- Include Navbar Fragment -->
+   <div th:replace="~{fragments/navbar :: navbar}"></div>
+
+    <div class="breadcrumb-container">
+        <h1> <span> | </span>  About Bhopal</h1>
+        <p><a href="/">Home</a> / <a href="#">Bhopal</a> / <span>About Bhopal</span></p>
+    </div>
+
+
+<div class="container6" id="cont1">
+    <div class="text">
+        <h2> Bhopal – The City of Lakes! </h2>
+        <p>Experience the serene beauty and majestic charm of Bhopal’s stunning lakes!
+         Whether it’s a peaceful evening by the water or an adventure-filled boat ride,
+          the lakes of Bhopal have something for everyone. 
+
+ Upper Lake (Bada Talab) – The largest and oldest lake, perfect for boating, sunsets,
+  and photography. Lower Lake (Chhota Talab) – A serene getaway, offering picturesque
+   views & peaceful walks. 
+Shahpura Lake – A favorite jogging & relaxation spot, surrounded by greenery. 
+Motia Talab, Bhoj Wetland & More – Hidden gems for birdwatchers & nature lovers. 
+      </p>
+        </div>
+    <div class="image">
+        <img th:src="@{/images/Lake.jpg}" alt="Image 2">
+    </div>
+</div>
+ 
+
+
+<div class="container6" id="cont1">
+    <div class="text">
+        <h2>Embracing the Future with Smart City Innovations</h2>
+        <p>Bhopal is transforming into a tech-driven, sustainable city with smart infrastructure, seamless connectivity, and eco-friendly initiatives. From intelligent traffic management to digital governance, every step is focused on enhancing urban living.
+
+Smart Poles & Wi-Fi Zones for better connectivity.
+ Intelligent Traffic & Surveillance Systems for safety.
+ Green Initiatives for a cleaner environment.
+ Digital Services for efficient governance.
+ Smart Public Transport for seamless mobility.
+</p>
+</div>
+    <div class="image">
+        <img th:src="@{/images/City.jpg}" alt="Image 1">
+    </div>
+</div>
+
+<div class="container6" id="cont1">
+    <div class="text">
+        <h2>Explore the Wild at Van Vihar National Park, Bhopal!  </h2>
+        <p>oking for a perfect getaway into nature?  Visit Van Vihar National Park, 
+        where the wilderness meets the serenity of Bada Talab (Upper Lake)!
+
+Spot majestic Tigers, Lions, and Leopards in their semi-natural habitat!
+Witness herds of deer, antelope, and playful bears in the lush green surroundings.
+A paradise for birdwatchers – catch sight of beautiful migratory birds!
+Cycle or take a peaceful walk along the scenic trails.    
+        </p>
+        </div>
+    <div class="image">
+        <img th:src="@{/images/VanVihar.jpg}" alt="Image 2">
+    </div>
+</div>
+
+<div class="container6" id="cont1">
+    <div class="text">
+        <h2>Step into the Vibrant World of Tribes at Tribal Museum, Bhopal! </h2>
+        <p>Immerse yourself in the rich culture, traditions, and artistry of the tribal 
+        communities of Madhya Pradesh!
+
+ Witness breathtaking tribal art & life-sized installations
+ Explore traditional tribal houses & handcrafted artifacts
+  Feel the spirit of folklore, music, and festivals through stunning exhibits
+   A paradise for history buffs, art lovers, and photographers!
+        </p>
+        </div>
+    <div class="image">
+        <img th:src="@{/images/TibalMuseum.jpg}" alt="Image 3">
+    </div>
+</div>
+
+
+<div class="container6" id="cont1">
+    <div class="text">
+        <h2>Discover the Timeless Beauty of Sanchi Stupa!  </h2>
+        <p>Step into history at Sanchi Stupa, one of the most iconic Buddhist heritage
+         sites in the world! Built by Emperor Ashoka in the 3rd century BCE, this UNESCO 
+         World Heritage Site is a symbol of peace, enlightenment, and timeless art. 
+
+ Explore Ancient Buddhist Monasteries & Pillars.
+ Immerse Yourself in Spiritual Serenity & History.
+ Capture Stunning Views & Architectural Wonders.   
+        </p>
+        </div>
+    <div class="image">
+        <img th:src="@{/images/SanchiStupa.jpg}" alt="Image 2">
+    </div>
+</div>
+
+
+
+<div class="container6" id="cont1">
+    <div class="text">
+        <h2>Explore the Royal Legacy of Bhopal!   </h2>
+        <p>Bhopal, the City of Lakes, is also home to stunning palaces that echo the
+         grandeur of its royal past!  From the legendary Begums to Nawabi elegance,
+          these palaces are a blend of history, architecture, and culture.
+
+ Taj Mahal Palace – The grand 19th-century palace built by Sultan Shah Jahan Begum.
+ Shaukat Mahal – A stunning fusion of Indo-Islamic & European architecture.
+ Gohar Mahal – A heritage beauty reflecting Mughal & Hindu styles along the lake.
+ Moti Mahal & Sadar Manzil – Former royal residences with majestic charm.        </p>
+        </div>
+    <div class="image">
+        <img th:src="@{/images/Palace.jpg}" alt="Image 2">
+    </div>
+</div>
+
+
+
+<div class="container6" id="cont1">
+    <div class="text">
+        <h2> Experience Ultimate Shopping & Entertainment at DB Mall, Bhopal!  </h2>
+        <p>Looking for a perfect place to shop, dine, and have fun? Head to DB City Mall,
+       the largest shopping destination in Bhopal! 
+
+Shop from top brands – Fashion, electronics, home decor & more!
+Indulge in delicious food – From street food to luxury dining.
+ Catch the latest movies at PVR Cinemas! 
+  Fun & Entertainment – Gaming zone, events & family-friendly activities!
+      </p>
+        </div>
+    <div class="image">
+        <img th:src="@{/images/DBMall.jpg}" alt="Image 2">
+    </div>
+</div>
+ 
+ 
+ 
+ 
+ 
+   <!-- Include footer Fragment -->
+  <div th:replace="~{fragments/footer :: footer}"></div>  
+   
+
+
+
+</body>
+</html>
